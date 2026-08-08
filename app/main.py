@@ -7,7 +7,6 @@ app = FastAPI(
     description="Evaluation finale LOG3550",
     version="1.0.0",
 )
-
 class TaskCreate(BaseModel):
     title: str = Field(..., min_length=1, max_length=100)
     description: Optional[str] = Field(default=None, max_length=500)
